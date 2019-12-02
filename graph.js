@@ -65,7 +65,8 @@ const update = data => {
   // 3. Remove any unwanted paths using exit selection
   paths
     .exit()
-    .transition(750)
+    .transition()
+    .duration(750)
     .attrTween("d", arcTweenExit)
     .remove();
 
@@ -149,7 +150,7 @@ const arcTweenExit = d => {
   let i = d3.interpolate(d.startAngle, d.endAngle);
 
   return function(t) {
-    d.endAngle = i(t);
+    d.startAngle = i(t);
     return arcPath(d);
   };
 };
