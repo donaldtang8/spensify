@@ -1,0 +1,23 @@
+nav {
+  padding: 0 1.5rem;
+}
+
+.card {
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.15);
+}
+
+.tip {
+  padding: 1rem;
+  background: #333;
+  color: #fff;
+}
+
+.name,
+.cost,
+.delete {
+  text-align: center;
+}
+
+.delete {
+  color: #ef5350;
+}
